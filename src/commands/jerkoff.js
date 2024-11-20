@@ -23,6 +23,7 @@ export default function jerkOff(client) {
       num++
       if (num >= 15) {
         await reaction.message.edit('თენგიზი გულის შეტევამ იმსხვერპლა (ნძრევა ზედმეტი მოუვიდა)');
+        num = 0;
         return;
       }
       await reaction.message.edit(`თენგიზმა ჩამოკრა ${num}\n ჩამოაკვრევინე კიდევ`);
